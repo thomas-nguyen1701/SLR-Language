@@ -3,7 +3,8 @@
 ### Tech Stack
 
 - React for frontend
-- Python for backend
+- Flask for backend
+- HTML5 for camera capture
 - Mediapipe for hand recognition
-- TensorFlow for model deployment and real-time recognition
+- TensorFlow for model deployment
 - AWS for cloud services
