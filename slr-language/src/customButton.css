@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+.custombutton{
+    background-color: rgb(rgb(251, 255, 0),);
+    border:none;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    font-family: "Inconsolata", monospace;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.custom-button:hover{
+    background-color: white;
+}
+.custom-button:active{
+    background-color: white;
+    transform: scale(0.98);
+}

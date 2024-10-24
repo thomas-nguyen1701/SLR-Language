@@ -1,13 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
+  box-sizing:  border-box;
+
+}
+.absolute{
+  position: absolute;
+  top: 50px !important;
+  inset: 0;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: row;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.justify-center{
+  justify-content: center;
+
+}
+
+.bg-shape1{
+  width: 600px;
+  height: 600px;
+  border-radius: 9999px;
+  position: relative;
+  animation: one 10s infinite;
+
+}
+.bg-shape2{
+  width: 500px;
+  height: 500px;
+  border-radius: 9999px;
+  position: relative;
+  animation: two 10s infinite;
+}
+.bg-shape3{
+  width: 500px;
+  height: 700px;
+  border-radius: 9999px;
+  position: relative;
+  animation: three 10s infinite;
+}
+
+@keyframes one{
+  0%{left: 0px; top: 0px;}
+  25%{left: -100px; top: 70px;}
+  0%{left: 20px;top: 150px;}
+  0%{left: 50px; top: 0px;}
+  0%{left: 0px; top: 0px;}
+
+}
+@keyframes two{
+  0%{left: 0px; top: 0px;}
+  25%{left: 50px; top: 10px;}
+  0%{left: 100px;top: 50px;}
+  0%{left: 50px; top: 100px;}
+  0%{left: 0px; top: 0px;}
+
+}
+
+.opacity-50{
+  opacity: .5;
+}
+
+.bg-blur{
+  filter: blur(90px);
+}
+.bg-primary{
+  background-color: rgb(30, 0, 255);
+}
+.bg-cyan{
+  background-color: rgb(0, 204, 255);
+}
+
+.bg-purple{
+  background-color: rgb(195, 0, 255);
+}
+
+.animation-typing{
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  padding: 450px 0;
+  border: 3px black;
 }
