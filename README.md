@@ -14,6 +14,16 @@
 Bryce Chao
 
 
+## Setup to Run Back-End Only
+- Python version 3.9-3.12
+- pip install mediapipe
+- pip install seaborn
+- pip install tensorflow
+- pip install scikit-learn
+- pip install opencv-python
+Go to directory where app.py is located and >> python ./app.py
+
+
 ## Acknowledgments
 
 This project utilizes code from [hand-gesture-recognition-using-mediapipe](https://github.com/Kazuhito00/hand-gesture-recognition-using-mediapipe) by [Kazuhito00, arky, taffarel55, PINTO0309] under the Apache License 2.0.
