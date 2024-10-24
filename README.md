@@ -1,4 +1,5 @@
 # SLR-Language
+
 ### Tech Stack
 - React
 - Flask
@@ -15,5 +16,3 @@ Modifications
 Added feature X
 Improved performance in Y
 Fixed bug Z
-
-This project is licensed under the Apache License 2.0. See LICENSE file for details.
