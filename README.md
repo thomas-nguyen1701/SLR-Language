@@ -11,8 +11,8 @@
 - AWS for cloud services
 
 ## Contributors
-Bryce Chao
-Matthew Morello
+- Bryce Chao
+- Matthew Morello
 
 ## Setup to Run Back-End Only
 - Python version 3.9-3.12
