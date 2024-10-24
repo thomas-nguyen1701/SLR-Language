@@ -12,7 +12,9 @@
 
 ## Contributors
 - Bryce Chao
+- Thomas Nguyen
 - Matthew Morello
+- Ronit Narayan
 
 ## Setup to Run Back-End Only
 - Python version 3.9-3.12
