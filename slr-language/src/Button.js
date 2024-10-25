@@ -12,7 +12,7 @@ function CustomButton() {
 
   return (
     <div>
-        <div className="custom-button" onClick={handleButtonClick}>
+        <div className="custom-button" style={{ display: 'flex', justifyContent: 'center'}} onClick={handleButtonClick}>
             <Button>
               Open Camera // label for camera button
             </Button>
