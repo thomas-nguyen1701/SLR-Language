@@ -15,7 +15,7 @@
 - Ronit Narayan
 - Thomas Nguyen
 
-## Setup to Run Back-End Only
+## Setup to Run Backend
 - Python version 3.9-3.12
 - pip install mediapipe
 - pip install seaborn
