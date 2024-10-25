@@ -13,6 +13,7 @@ import mediapipe as mp
 # from utils import CvFpsCalc
 from model import KeyPointClassifier
 
+
 def get_args():
     parser = argparse.ArgumentParser()
 
@@ -54,7 +55,6 @@ def main():
 
     # Model load
     mp_hands = mp.solutions.hands
-    mp_drawing = mp.solutions.drawing_utils
     hands = mp_hands.Hands(
         static_image_mode=use_static_image_mode,
         max_num_hands=2,
@@ -142,7 +142,7 @@ def main():
                     brect,
                     handedness,
                     keypoint_classifier_labels[hand_sign_id],#left or right hand
-                    # point_history_classifier_labels[most_common_fg_id[0][0]],
+                    hand_landmarks,
                 )
         else:
             point_history.append([0, 0])
@@ -151,7 +151,7 @@ def main():
         debug_image = draw_info(debug_image, mode, number)
 
         # Screen reflection #############################################################
-        cv.imshow('Hand Gesture Recognition', debug_image)
+        cv.imshow('Sign Language Recognition', debug_image)
 
     cap.release()
     cv.destroyAllWindows()
@@ -257,7 +257,7 @@ def logging_csv(number, mode, landmark_list):
             writer.writerow([number, *landmark_list])
     return
 
-def draw_info_text(image, brect, handedness, hand_sign_text):
+def draw_info_text(image, brect, handedness, hand_sign_text, landmarks):
     cv.rectangle(image, (brect[0], brect[1]-28), (brect[2], brect[1]-52),
                  (255, 255, 255), -1)
     #get hand: 'left' or 'right'
@@ -270,6 +270,16 @@ def draw_info_text(image, brect, handedness, hand_sign_text):
         l_r_hand = l_r_hand + ':' + hand_sign_text
     cv.putText(image, l_r_hand, (brect[0]+6, brect[1]-34),
                cv.FONT_HERSHEY_SIMPLEX, .7, (0,0,0), 1, cv.LINE_AA)
+    if landmarks is not None:
+        for landmark in enumerate(landmarks.landmark):
+            # Convert landmark coordinates to pixel coordinates
+            h, w, _ = image.shape
+            x = int(landmark[1].x * w)
+            y = int(landmark[1].y * h)
+            
+            # Draw circles on the image for each landmark
+            cv.circle(image, (x, y), 2, (255, 0, 0), -1)  # Green circles for hand landmarks
+            cv.putText(image, str(landmark[0]), (x,y), cv.FONT_HERSHEY_COMPLEX, 0.5, (0,0,255), 1, cv.LINE_AA)
     return image
 
 def draw_info(image, mode, number):
