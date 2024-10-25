@@ -1,20 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 
-.custombutton{
-    background-color: rgb(rgb(251, 255, 0),);
-    border:none;
-    color:white;
-    padding: 20px;
+.custom-button {
+    background: linear-gradient(135deg, #ff6b6b, #ff8c42, #ffc400, #50c878, #6b6bff);
+    border: none;
+    color: white;
+    padding: 25px 50px;  /* Adjust padding to make the button bigger */
     text-align: center;
     font-family: "Inconsolata", monospace;
-    border: none;
-    border-radius: 5px;
+    border-radius: 50px;  /* This makes the button an oval */
     cursor: pointer;
-}
-.custom-button:hover{
+    font-size: 1.5em; /* Slightly larger text */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .custom-button:hover {
     background-color: white;
-}
-.custom-button:active{
+    color: black;
+  }
+  
+  .custom-button:active {
     background-color: white;
-    transform: scale(0.98);
-}
+    color: black;
+    transform: scale(0.95); /* Slight shrink effect when clicked */
+  }
+  
