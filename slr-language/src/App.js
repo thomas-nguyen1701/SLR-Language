@@ -1,7 +1,7 @@
 // App.js
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
-import CustomButton from './Button'; // Import your custom button
+import { CustomButton } from './Button.js'; // import custom button from Button.js
 import { useEffect, useRef } from 'react';
 
 function CameraPage() {
@@ -14,7 +14,7 @@ function CameraPage() {
           videoRef.current.srcObject = stream;
         }
       })
-      .catch(err => console.error("Error accessing webcam:", err));
+      .catch(err => console.error("Error accessing webcam: ", err));
   }, []);
 
   return (
@@ -34,9 +34,9 @@ function App() {
             <div className='animation-typing'>
               <TypeAnimation
                 sequence={[
-                  "Welcome to SLR", 
+                  "Welcome to SLR.", 
                   1000,
-                  "Where learning ASL becomes easy",
+                  "Where learning ASL becomes easy.",
                   1000
                 ]}
                 speed={20}
@@ -45,7 +45,7 @@ function App() {
                 style={{ fontSize: '4em' }}
               />
             </div>
-            <CustomButton /> {/* Your new colorful button */}
+            <CustomButton /> // Insert custom button from Button.js
           </>
         } />
         <Route path="/camera" element={<CameraPage />} />

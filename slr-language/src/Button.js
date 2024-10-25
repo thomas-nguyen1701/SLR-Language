@@ -12,9 +12,11 @@ function CustomButton() {
 
   return (
     <div>
-        <Button className="custom-button" onClick={handleButtonClick}>
-            Open Camera
-        </Button>
+        <div className="custom-button" onClick={handleButtonClick}>
+            <Button>
+              Open Camera // label for camera button
+            </Button>
+        </div>
     </div>
   );
 }

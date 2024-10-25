@@ -1,22 +1,19 @@
 # SLR-Language
 
 ### Tech Stack
-- React
-- Flask
+- Matplotlab
 - Mediapipe
-- TensorFlow
 - Numpy
 - Skitlearning
-- Matplotlab
-- AWS
-
+- TensorFlow
+- React
 
 ## Contributors
 - Bryce Chao
-- Thomas Nguyen
+- Hamza Kassem
 - Matthew Morello
 - Ronit Narayan
-- Hamza Kassem
+- Thomas Nguyen
 
 ## Setup to Run Back-End Only
 - Python version 3.9-3.12
@@ -27,13 +24,10 @@
 - pip install opencv-python
 Go to directory where app.py is located and >> python ./app.py
 
-
 ## Acknowledgments
-
 This project utilizes code from [hand-gesture-recognition-using-mediapipe](https://github.com/Kazuhito00/hand-gesture-recognition-using-mediapipe) by [Kazuhito00, arky, taffarel55, PINTO0309] under the Apache License 2.0.
 
 ## Modifications
-
 This project is a modified version of [hand-gesture-recognition-using-mediapipe](https://github.com/Kazuhito00/hand-gesture-recognition-using-mediapipe). The following changes have been made:
 - Deleted and trained our own model using custom gestures
 - Removed/refactored code that were deemed unnecessary for our project, increased performance
