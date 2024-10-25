@@ -19,7 +19,7 @@ body {
 }
 
 .bg-shape1{
-  width: 600px;
+  width: 700px;
   height: 600px;
   border-radius: 9999px;
   position: relative;
@@ -27,14 +27,14 @@ body {
 
 }
 .bg-shape2{
-  width: 500px;
+  width: 700px;
   height: 500px;
   border-radius: 9999px;
   position: relative;
   animation: two 10s infinite;
 }
 .bg-shape3{
-  width: 500px;
+  width: 800px;
   height: 700px;
   border-radius: 9999px;
   position: relative;
