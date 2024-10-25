@@ -1,8 +1,8 @@
 # SLR-Language
 
 ### Tech Stack
-- Matplotlab
-- Mediapipe
+- MatPlotLab
+- MediaPipe
 - Numpy
 - Skitlearning
 - TensorFlow
