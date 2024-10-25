@@ -11,11 +11,6 @@
 - AWS
 
 
-Modifications
-Added feature X
-Improved performance in Y
-Fixed bug Z
-
 ## Contributors
 - Bryce Chao
 - Thomas Nguyen
