@@ -10,7 +10,6 @@
 - Matplotlab
 - AWS
 
-This project utilizes code from [Original Project Name](link-to-original-repo) by [Original Author's Name].
 
 Modifications
 Added feature X
@@ -45,3 +44,4 @@ This project is a modified version of [hand-gesture-recognition-using-mediapipe]
 - Removed/refactored code that were deemed unnecessary for our project, increased performance
 - Removed some existing files that were deemed unnecessary for our project, increased performance
 - Modified existing code to support different/more parameters such as hand signing letters A-Z
+- Now shows handmark location with landmark numbers 0-21
