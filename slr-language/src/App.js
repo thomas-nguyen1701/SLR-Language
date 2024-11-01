@@ -1,7 +1,11 @@
 // App.js
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
+<<<<<<< Updated upstream
 import { CustomButton } from './Button.js'; // import custom button from Button.js
+=======
+import CustomButton from './Button.js'; // Import your custom button
+>>>>>>> Stashed changes
 import { useEffect, useRef } from 'react';
 
 function CameraPage() {
