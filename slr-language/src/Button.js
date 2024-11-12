@@ -11,14 +11,12 @@ function CustomButton() {
   };
 
   return (
-    <div>
-        <div className="custom-button" style={{ display: 'flex', justifyContent: 'center'}} onClick={handleButtonClick}>
-            <Button>
-              Open Camera // label for camera button
-            </Button>
-        </div>
+    <div class= {{display: "absoulute"}}>
+        <Button className="custom-button" onClick={handleButtonClick}>
+          Open Camera
+        </Button>
     </div>
   );
 }
 
-export default CustomButton;
+export {CustomButton};

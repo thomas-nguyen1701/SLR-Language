@@ -1,11 +1,7 @@
 // App.js
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
-<<<<<<< Updated upstream
 import { CustomButton } from './Button.js'; // import custom button from Button.js
-=======
-import CustomButton from './Button.js'; // Import your custom button
->>>>>>> Stashed changes
 import { useEffect, useRef } from 'react';
 
 function CameraPage() {
@@ -23,7 +19,6 @@ function CameraPage() {
 
   return (
     <div>
-      <h2>Camera View</h2>
       <video ref={videoRef} autoPlay />
     </div>
   );
@@ -49,7 +44,7 @@ function App() {
                 style={{ fontSize: '4em' }}
               />
             </div>
-            <CustomButton /> // Insert custom button from Button.js
+            <CustomButton /> 
           </>
         } />
         <Route path="/camera" element={<CameraPage />} />
