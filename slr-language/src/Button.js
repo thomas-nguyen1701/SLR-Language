@@ -11,10 +11,12 @@ function CustomButton() {
   };
 
   return (
-    <div class= {{display: "absoulute"}}>
+    <div class= {{display: "flex"}}>
+      <span>
         <Button className="custom-button" onClick={handleButtonClick}>
           Open Camera
         </Button>
+        </span>
     </div>
   );
 }

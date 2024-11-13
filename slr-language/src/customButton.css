@@ -5,11 +5,11 @@
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #000000;
   cursor: pointer;
   flex-shrink: 0;
   font-family: "Inconsolata", monospace;
-  font-size: 16px;
+  font-size: 35px;
   font-weight: 500;
   height: 4rem;
   padding: 0 1.6rem;
@@ -21,17 +21,63 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   position: absolute;
+  width: 300px;
+  display: block;
+  position: absolute;
 
 
+  } 
+@media (min-width: 1441px ) and (max-width: 2560px) { /*desktop positioning */
+    .custom-button {
+          top: 550px;
+          left: 1160px;
+        }
+      }
+@media (min-width: 1101px ) and (max-width: 1440px) { /*desktop positioning */
+  .custom-button {
+        top: 550px;
+        left: 500px;
+      }
+    }
 
 
+@media (min-width: 1072px ) and (max-width: 1100px) { /*desktop positioning */
+  .custom-button {
+        top: 550px;
+        left: 360px;
+      }
+    }
+      
+@media (min-width: 1024px ) and (max-width: 1071px) { /*desktop positioning */
+  .custom-button {
+      top: 600px;
+      left: 350px;
+    }
+  }
   
-
-
+  /* Tablet positioning */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-button {
+      top: 600px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Mobile positioning */
+@media (max-width: 767px) {
+  .custom-button {
+      font-size: 25px; /* Smaller font for mobile */
+      width: 80%; /* Adjust width to fit mobile screens */
+      left: 50%;
+      top: 90%; /* Position closer to the bottom */
+      transform: translate(-50%, -10%);
+    }
   }  
   .custom-button:hover {
     box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
     transition-duration: .1s;
+    opacity: 1;
 
   
   }
@@ -42,5 +88,6 @@
     
   }
   }
-  @media screen and ()
+
+  
   
