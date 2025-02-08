@@ -1,4 +1,5 @@
 // App.js
+import {lazy, Suspense} from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import { CustomButton } from './Button.js'; // import custom button from Button.js
@@ -27,6 +28,7 @@ function CameraPage() {
 function App() {
   return (
     <Router>
+         <Suspense fallback={<div className="container">Loading...</div>}>
       <Routes>
         <Route path="/" element={
           <>
@@ -41,7 +43,6 @@ function App() {
                 speed={20}
                 repeat={Infinity}
                 cursor={true}
-                style={{ fontSize: '4em' }}
               />
             </div>
             <CustomButton /> 
@@ -49,6 +50,7 @@ function App() {
         } />
         <Route path="/camera" element={<CameraPage />} />
       </Routes>
+      </Suspense>
     </Router>
   );
 }
